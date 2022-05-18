@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
   private ActivityMainBinding binding;
 
   //test hiiiiiiiii
-  //test Lian 518
+  //test Lian
   //test serty8
   //test aaabbb
 
