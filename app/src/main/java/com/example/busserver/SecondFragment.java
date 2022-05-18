@@ -12,7 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.busserver.databinding.FragmentSecondBinding;
 
-//12
+//1
 
 public class SecondFragment extends Fragment {
 
