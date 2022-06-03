@@ -2,11 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-
-
   android:id="@+id/coordinatorLayoutStart"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  android:layout_gravity="center">
 
   <android.support.design.widget.AppBarLayout
     android:id="@+id/appbarStart"
@@ -52,19 +51,6 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/appbarStart" />
 
-  <Spinner
-    android:id="@+id/spinnerStart1"
-    style="@android:style/Widget.DeviceDefault.Light.Spinner"
-    android:layout_width="197dp"
-    android:layout_height="48dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginTop="104dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.234"
-    app:layout_constraintStart_toEndOf="@+id/itemStart1"
-    app:layout_constraintTop_toBottomOf="@+id/appbarStart"
-    tools:ignore="SpeakableTextPresentCheck" />
-
   <TextView
     android:id="@+id/itemStart2"
     android:layout_width="wrap_content"
@@ -77,19 +63,6 @@
     android:textStyle="bold"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/itemStart1" />
-
-  <Spinner
-    android:id="@+id/spinnerStart2"
-    style="@android:style/Widget.DeviceDefault.Light.Spinner"
-    android:layout_width="197dp"
-    android:layout_height="48dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="36dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.101"
-    app:layout_constraintStart_toEndOf="@+id/itemStart2"
-    app:layout_constraintTop_toBottomOf="@+id/spinnerStart1"
-    tools:ignore="SpeakableTextPresentCheck" />
 
   <TextView
     android:id="@+id/itemStart3"
@@ -112,16 +85,16 @@
     android:ems="10"
     android:inputType="time"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.294"
+    app:layout_constraintHorizontal_bias="0.32"
     app:layout_constraintStart_toEndOf="@+id/itemStart3"
-    app:layout_constraintTop_toBottomOf="@+id/spinnerStart2"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
     tools:ignore="SpeakableTextPresentCheck" />
 
   <Button
     android:id="@+id/startcar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="56dp"
     android:background="#03A9F4"
     android:text="發車"
     android:textSize="20sp"
@@ -130,6 +103,32 @@
     app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/timeStart3" />
+
+  <EditText
+    android:id="@+id/editTextTextPassword2"
+    android:layout_width="204sp"
+    android:layout_height="51sp"
+    android:layout_marginTop="108dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.319"
+    app:layout_constraintStart_toEndOf="@+id/itemStart1"
+    app:layout_constraintTop_toBottomOf="@+id/appbarStart"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+  <EditText
+    android:id="@+id/editTextTextPassword3"
+    android:layout_width="204sp"
+    android:layout_height="51sp"
+    android:layout_marginTop="28dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.294"
+    app:layout_constraintStart_toEndOf="@+id/itemStart2"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+    tools:ignore="SpeakableTextPresentCheck" />
 
 
 </android.support.constraint.ConstraintLayout>
