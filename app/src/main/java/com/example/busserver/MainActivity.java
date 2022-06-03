@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.driver_list);
 
     Button button = (Button) findViewById(R.id.buttonDriverLogin);
     button.setOnClickListener(new View.OnClickListener() {

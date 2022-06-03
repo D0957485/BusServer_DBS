@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:background="#00BCD4"
+        android:theme="@style/Theme.BusServer.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:background="#00BCD4"
+        android:text=" 查詢公車"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textDirection="inherit"
+        android:textIsSelectable="false"
+        android:textSize="30"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ListView
+        android:layout_width="409dp"
+        android:layout_height="638dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="71dp"
+        android:layout_height="52dp"
+        android:background="#00BCD4"
+        android:text=" ←"
+        android:textSize="40"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <SearchView
+        android:layout_width="409dp"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+</android.support.constraint.ConstraintLayout>
