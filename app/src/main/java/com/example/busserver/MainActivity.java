@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.driver_list);
+    setContentView(R.layout.activity_main);
 
-    Button button = (Button) findViewById(R.id.buttonDriverLogin);
+    Button button = (Button) findViewById(R.id.buttonComLogin);
     button.setOnClickListener(new View.OnClickListener() {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, StartCarActivity.class);
+        Intent intent = new Intent(MainActivity.this, BusDriverLogIn.class);
         startActivity(intent);
       }
 
