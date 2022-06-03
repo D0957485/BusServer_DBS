@@ -2,14 +2,14 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/coordinatorLayout"
+  android:id="@+id/coordinatorLayoutMain"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:layout_gravity="center"
   tools:context=".MainActivity">
 
   <android.support.design.widget.AppBarLayout
-    android:id="@+id/appBarLayout"
+    android:id="@+id/appBarLayoutMain"
     android:layout_width="411dp"
     android:layout_height="53dp"
     android:background="#0410F3"
@@ -17,6 +17,107 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/titalMain"
+      style="@android:style/Widget.Material.TextView"
+      android:layout_width="231dp"
+      android:layout_height="55dp"
+      android:text="Bus State App"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textColor="@color/white"
+      android:textSize="34sp"
+      android:textStyle="bold" />
+  </android.support.design.widget.AppBarLayout>
+
+  <Button
+    android:id="@+id/buttonTosearch"
+    android:layout_width="296dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="32dp"
+    android:background="#03DBF6"
+    android:clickable="true"
+    android:text="民眾查詢"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.505"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appBarLayoutMain" />
+
+  <Button
+    android:id="@+id/buttonDriverLogin"
+    android:layout_width="296dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="32dp"
+    android:background="#03DBF6"
+    android:clickable="true"
+    android:text="司機登入"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.505"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonTosearch" />
+
+  <Button
+    android:id="@+id/buttonComLogin"
+    android:layout_width="296dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="32dp"
+    android:background="#03DBF6"
+    android:clickable="true"
+    android:text="公司登入"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonDriverLogin" />
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/appBarLayout2Main"
+    android:layout_width="match_parent"
+    android:layout_height="307dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonComLogin"
+    app:layout_constraintVertical_bias="1.0"
+    tools:layout_editor_absoluteX="1dp">
+
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/layout2Main"
+      android:layout_width="417dp"
+      android:layout_height="35dp"
+      android:background="#2196F3"
+      android:theme="@style/Theme.BusServer.AppBarOverlay"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:layout_editor_absoluteX="-3dp">
+
+      <TextView
+        android:id="@+id/tital2Main"
+        style="@android:style/Widget.Material.TextView"
+        android:layout_width="118dp"
+        android:layout_height="match_parent"
+        android:text="系統公告"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+      android:id="@+id/listInMain"
+      android:layout_width="match_parent"
+      android:layout_height="260dp"
+      tools:layout_editor_absoluteX="-3dp"
+      tools:layout_editor_absoluteY="35dp" />
+
+  </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
