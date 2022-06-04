@@ -3,36 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/BusServer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1605" />
-        <entry key="..\:/BusServer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver.xml" value="0.171875" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver_log_in.xml" value="0.25" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_ya.xml" value="0.6" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_car_list.xml" value="0.1859375" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_run_car.xml" value="0.15104166666666666" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_start_car.xml" value="0.2" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/bus_driver_log_in.xml" value="0.15104166666666666" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/busdriver.xml" value="0.15104166666666666" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/busya.xml" value="0.2" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/car_list.xml" value="0.1859375" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/company.xml" value="0.171875" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/company_login.xml" value="0.171875" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/BusServer/app/src/main/res/layout/content_main.xml" value="0.1" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/drive_car.xml" value="0.264" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/driver_list.xml" value="0.15104166666666666" />
         <entry key="..\:/BusServer/app/src/main/res/layout/fragment_first.xml" value="0.2453125" />
         <entry key="..\:/BusServer/app/src/main/res/menu/menu_main.xml" value="0.2453125" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout-w1240dp/activity_bus_driver_login.xml" value="0.10809906291834002" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout-w936dp/activity_bus_driver_login.xml" value="0.25" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/activity_bus_driver_login.xml" value="0.3375" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/activity_main.xml" value="0.3375" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/bus_driver_log_in.xml" value="0.22" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/car_list.xml" value="0.33" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/company.xml" value="0.2" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/company_login.xml" value="0.125" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/content_main.xml" value="0.3375" />
-        <entry key="..\:/Users/ShenLian1011/Desktop/code/JAVA test/BusServer_DBS/app/src/main/res/layout/driver_list.xml" value="0.3375" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/activity_car_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/activity_company.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/activity_company_login.xml" value="0.3515625" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/busdriver.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/busya.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/company.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/company_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/content_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/a2397/StudioProjects/BusServer_DBS1/app/src/main/res/layout/driver_list.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
