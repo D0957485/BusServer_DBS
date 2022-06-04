@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+
+
+  android:id="@+id/coordinatorLayout2"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:foregroundTint="#FFFFFF">
+
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar"
+
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#3F51B5"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+      android:id="@+id/imageButton3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foregroundTint="#F4F4F4"
+      app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="司機"
+      android:textColor="#FFFFFF"
+      android:textSize="34sp"
+      android:textStyle="bold" />
+
+  </android.support.design.widget.AppBarLayout>
+
+  <Button
+    android:id="@+id/button2"
+    android:layout_width="110dp"
+    android:layout_height="65dp"
+    android:layout_marginTop="172dp"
+    android:foregroundTint="#05B1FF"
+    android:text="發車"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.501"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+  <Button
+    android:id="@+id/button6"
+    android:layout_width="110dp"
+    android:layout_height="65dp"
+    android:layout_marginBottom="32dp"
+    android:foregroundTint="#05B1FF"
+    android:text="上車"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/button5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.501"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/button5"
+    android:layout_width="110dp"
+    android:layout_height="65dp"
+    android:layout_marginBottom="300dp"
+    android:foregroundTint="#05B1FF"
+    android:text="下車"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.501"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
