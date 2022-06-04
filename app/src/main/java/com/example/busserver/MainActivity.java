@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, driver_list.class);
+        Intent intent = new Intent(MainActivity.this, BusYa.class);
         startActivity(intent);
       }
 
