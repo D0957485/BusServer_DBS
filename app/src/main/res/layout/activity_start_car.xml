@@ -11,6 +11,8 @@
     android:id="@+id/backStart"
     android:layout_width="60dp"
     android:layout_height="56dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
     android:background="#00FFFFFF"
     android:foreground="?attr/actionModeCloseDrawable"
     android:foregroundTint="@color/black"
@@ -18,10 +20,103 @@
     app:layout_constraintTop_toTopOf="parent"
     tools:ignore="SpeakableTextPresentCheck" />
 
+  <EditText
+    android:id="@+id/editTextTextPassword2"
+    android:layout_width="204sp"
+    android:layout_height="51sp"
+    android:layout_marginTop="72dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.344"
+    app:layout_constraintStart_toEndOf="@+id/itemStart1"
+    app:layout_constraintTop_toBottomOf="@+id/titalStart"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+  <EditText
+    android:id="@+id/editTextTextPassword3"
+    android:layout_width="204sp"
+    android:layout_height="51sp"
+    android:layout_marginTop="32dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.322"
+    app:layout_constraintStart_toEndOf="@+id/itemStart2"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+  <Button
+    android:id="@+id/startcar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="68dp"
+    android:background="#03A9F4"
+    android:text="發車"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.479"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/timeStart3" />
+
+  <EditText
+    android:id="@+id/timeStart3"
+    android:layout_width="204dp"
+    android:layout_height="51dp"
+    android:layout_marginTop="28dp"
+    android:ems="10"
+    android:inputType="time"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.344"
+    app:layout_constraintStart_toEndOf="@+id/itemStart3"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+  <TextView
+    android:id="@+id/itemStart3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="52dp"
+    android:text="發車時間"
+    android:textColor="#131212"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/itemStart2" />
+
+  <TextView
+    android:id="@+id/itemStart2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="64dp"
+    android:text="公車號碼"
+    android:textColor="#131212"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/itemStart1" />
+
+  <TextView
+    android:id="@+id/itemStart1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="72dp"
+    android:text="車牌號碼"
+    android:textColor="#131212"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/backStart" />
+
   <TextView
     android:id="@+id/titalStart"
     android:layout_width="113dp"
     android:layout_height="56dp"
+    android:layout_marginTop="4dp"
     android:text="發車"
     android:textAlignment="center"
     android:textColor="@color/black"
@@ -31,96 +126,6 @@
     app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toEndOf="@+id/backStart"
     app:layout_constraintTop_toTopOf="parent" />
-
-  <TextView
-    android:id="@+id/itemStart1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="48dp"
-    android:text="車牌號碼"
-    android:textColor="#131212"
-    android:textSize="20sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="172dp" />
-
-  <TextView
-    android:id="@+id/itemStart2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="48dp"
-    android:layout_marginTop="57dp"
-    android:text="公車號碼"
-    android:textColor="#131212"
-    android:textSize="20sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/itemStart1" />
-
-  <TextView
-    android:id="@+id/itemStart3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="48dp"
-    android:layout_marginTop="56dp"
-    android:text="發車時間"
-    android:textColor="#131212"
-    android:textSize="20sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/itemStart2" />
-
-  <EditText
-    android:id="@+id/timeStart3"
-    android:layout_width="204dp"
-    android:layout_height="51dp"
-    android:layout_marginTop="32dp"
-    android:ems="10"
-    android:inputType="time"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.32"
-    app:layout_constraintStart_toEndOf="@+id/itemStart3"
-    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
-    tools:ignore="SpeakableTextPresentCheck" />
-
-  <Button
-    android:id="@+id/startcar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="56dp"
-    android:background="#03A9F4"
-    android:text="發車"
-    android:textSize="20sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/timeStart3" />
-
-  <EditText
-    android:id="@+id/editTextTextPassword2"
-    android:layout_width="204sp"
-    android:layout_height="51sp"
-    android:ems="10"
-    android:inputType="textPassword"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.319"
-    app:layout_constraintStart_toEndOf="@+id/itemStart1"
-    tools:ignore="SpeakableTextPresentCheck"
-    tools:layout_editor_absoluteY="164dp" />
-
-  <EditText
-    android:id="@+id/editTextTextPassword3"
-    android:layout_width="204sp"
-    android:layout_height="51sp"
-    android:layout_marginTop="28dp"
-    android:ems="10"
-    android:inputType="textPassword"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.294"
-    app:layout_constraintStart_toEndOf="@+id/itemStart2"
-    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
-    tools:ignore="SpeakableTextPresentCheck" />
 
 
 </android.support.constraint.ConstraintLayout>

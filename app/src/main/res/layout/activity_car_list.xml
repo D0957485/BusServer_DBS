@@ -3,7 +3,8 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  tools:context=".CarList">
 
   <Button
     android:id="@+id/pre4"
@@ -31,7 +32,6 @@
     android:id="@+id/textView3"
     android:layout_width="179dp"
     android:layout_height="46dp"
-    android:layout_marginBottom="28dp"
     android:background="#65000000"
     android:gravity="center"
     android:text="Car List"
@@ -39,5 +39,7 @@
     android:textSize="24sp"
     app:layout_constraintBottom_toTopOf="@+id/_dynamic"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
 </android.support.constraint.ConstraintLayout>
