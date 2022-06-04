@@ -14,7 +14,16 @@
     android:theme="@style/Theme.BusServer"
     tools:targetApi="31">
     <activity
-      android:name=".StartCarActivity"
+      android:name=".CarList"
+      android:exported="false" />
+    <activity
+      android:name=".BusDriver"
+      android:exported="false" />
+    <activity
+      android:name=".BusDriverLogIn"
+      android:exported="false" />
+    <activity
+      android:name=".StartCar"
       android:exported="false" />
     <activity
       android:name=".MainActivity"
