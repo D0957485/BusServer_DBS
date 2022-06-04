@@ -14,7 +14,10 @@
         android:theme="@style/Theme.BusServer"
         tools:targetApi="31">
         <activity
-            android:name=".driver_list"
+            android:name=".activity_company_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity_company"
             android:exported="false" />
         <activity
             android:name=".CarList"
