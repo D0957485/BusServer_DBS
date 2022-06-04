@@ -6,13 +6,15 @@
         <entry key="..\:/BusServer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1605" />
         <entry key="..\:/BusServer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver.xml" value="0.171875" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver_log_in.xml" value="0.15104166666666666" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver_log_in.xml" value="0.25" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_car_list.xml" value="0.1859375" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_run_car.xml" value="0.15104166666666666" />
-        <entry key="..\:/BusServer/app/src/main/res/layout/activity_start_car.xml" value="0.264" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_start_car.xml" value="0.2" />
         <entry key="..\:/BusServer/app/src/main/res/layout/bus_driver_log_in.xml" value="0.15104166666666666" />
         <entry key="..\:/BusServer/app/src/main/res/layout/busdriver.xml" value="0.15104166666666666" />
         <entry key="..\:/BusServer/app/src/main/res/layout/busya.xml" value="0.2" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/car_list.xml" value="0.1859375" />
         <entry key="..\:/BusServer/app/src/main/res/layout/company.xml" value="0.171875" />
         <entry key="..\:/BusServer/app/src/main/res/layout/company_login.xml" value="0.171875" />
         <entry key="..\:/BusServer/app/src/main/res/layout/content_main.xml" value="0.1" />
