@@ -3,7 +3,7 @@ package com.example.busserver;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class BusDriverActivity extends AppCompatActivity {
+public class BusDriver extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

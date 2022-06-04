@@ -2,21 +2,10 @@ package com.example.busserver;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.busserver.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,27 +15,39 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    Button button = (Button) findViewById(R.id.buttonComLogin);
+    Button button = (Button) findViewById(R.id.buttonTosearch);
     button.setOnClickListener(new View.OnClickListener() {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, BusDriverActivity.class);
+        Intent intent = new Intent(MainActivity.this, BusDriverLogIn.class);
         startActivity(intent);
       }
 
     });
 
-    Button button2 = (Button) findViewById(R.id.buttonTosearch);
+    Button button2 = (Button) findViewById(R.id.buttonDriverLogin);
     button2.setOnClickListener(new View.OnClickListener() {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, BusDriverActivity.class);
+        Intent intent = new Intent(MainActivity.this, BusDriver.class);
         startActivity(intent);
       }
 
     });
+
+    Button button3 = (Button) findViewById(R.id.buttonComLogin);
+    button3.setOnClickListener(new View.OnClickListener() {
+
+      @Override
+      public void onClick (View view) {
+        Intent intent = new Intent(MainActivity.this, BusDriver.class);
+        startActivity(intent);
+      }
+
+    });
+
 
   }
 }

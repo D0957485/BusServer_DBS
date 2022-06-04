@@ -14,13 +14,13 @@
     android:theme="@style/Theme.BusServer"
     tools:targetApi="31">
     <activity
-      android:name=".BusDriverActivity"
+      android:name=".BusDriver"
       android:exported="false" />
     <activity
       android:name=".BusDriverLogIn"
       android:exported="false" />
     <activity
-      android:name=".StartCarActivity"
+      android:name=".StartCar"
       android:exported="false" />
     <activity
       android:name=".MainActivity"
