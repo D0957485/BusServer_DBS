@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, BusDriver.class);
+        Intent intent = new Intent(MainActivity.this, BusDriverLogIn.class);
         startActivity(intent);
       }
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, ListOfDriver.class);
+        Intent intent = new Intent(MainActivity.this, CompanyLogin.class);
         startActivity(intent);
       }
 
