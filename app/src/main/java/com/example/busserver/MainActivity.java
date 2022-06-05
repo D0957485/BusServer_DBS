@@ -16,6 +16,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -29,6 +30,9 @@ import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
 
+  String result;
+  TextView textView;
+
 //  Context context = this;
 //  EditText et1, et2, et3, et4;
 //  WebView webView;
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
   //0603
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
@@ -53,13 +58,18 @@ public class MainActivity extends AppCompatActivity {
 //      myHandler.removeCallbacks(runTimerStop);
 //    }
 
+
     Button button = (Button) findViewById(R.id.buttonTosearch);
+    textView = (TextView) findViewById(R.id.testTextView);
     button.setOnClickListener(new View.OnClickListener() {
 
       @Override
       public void onClick (View view) {
+
         Intent intent = new Intent(MainActivity.this, BusSearch.class);
         startActivity(intent);
+        Thread thread = new Thread(mutiThread);
+        thread.start();
       }
 
     });
@@ -69,8 +79,10 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onClick (View view) {
+
         Intent intent = new Intent(MainActivity.this, BusDriverLogIn.class);
         startActivity(intent);
+
       }
 
     });
@@ -89,50 +101,54 @@ public class MainActivity extends AppCompatActivity {
 
   } //end onCreate
 
-  private Runnable mutiThread = new Runnable() {
-    @Override
-    public void run() {
-      String result1;
-      String result2;
-      BreakIterator textView = null;
-      BreakIterator textView1 = null;
+  private Runnable mutiThread = new Runnable(){
+    public void run()
+    {
+
       try {
         URL url = new URL("http://10.0.2.2/GetData.php");
+        // 開始宣告 HTTP 連線需要的物件，這邊通常都是一綑的
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        // 建立 Google 比較挺的 HttpURLConnection 物件
         connection.setRequestMethod("POST");
-        connection.setDoOutput(true);
-        connection.setDoInput(true);
-        connection.setUseCaches(false);
-        connection.connect();
+        // 設定連線方式為 POST
+        connection.setDoOutput(true); // 允許輸出
+        connection.setDoInput(true); // 允許讀入
+        connection.setUseCaches(false); // 不使用快取
+        connection.connect(); // 開始連線
 
-        int responseCode = connection.getResponseCode();
-
-        if (responseCode == HttpURLConnection.HTTP_OK) {
-          InputStream inputStream = connection.getInputStream();
-          BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"), 8);
-          String line = null;
-          while ((line = bufferedReader.readLine()) != null) {
-            JSONArray dataJson = new JSONArray(line);
-            int i = dataJson.length() - 1;
-            JSONObject info = dataJson.getJSONObject(i);
-            String time = info.getString("time");
-            String dB = info.getString("dB");
-            result1 = time.toString();
-            result2 = dB.toString();
+        int responseCode =
+            connection.getResponseCode();
+        // 建立取得回應的物件
+        if(responseCode ==
+            HttpURLConnection.HTTP_OK){
+          // 如果 HTTP 回傳狀態是 OK ，而不是 Error
+          InputStream inputStream =
+              connection.getInputStream();
+          // 取得輸入串流
+          BufferedReader bufReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"), 8);
+          // 讀取輸入串流的資料
+          String box = ""; // 宣告存放用字串
+          String line = null; // 宣告讀取用的字串
+          while((line = bufReader.readLine()) != null) {
+            box += line + "\n";
+            // 每當讀取出一列，就加到存放字串後面
           }
-          inputStream.close();
+          inputStream.close(); // 關閉輸入串流
+          result = box; // 把存放用字串放到全域變數
         }
-      } catch (Exception e) {
-        result1 = e.toString();
-        result2 = e.toString();
+        // 讀取輸入串流並存到字串的部分
+        // 取得資料後想用不同的格式
+        // 例如 Json 等等，都是在這一段做處理
+
+      } catch(Exception e) {
+        result = e.toString(); // 如果出事，回傳錯誤訊息
       }
 
+      // 當這個執行緒完全跑完後執行
       runOnUiThread(new Runnable() {
-        @Override
         public void run() {
-
-          textView.setText(result1);
-          textView1.setText(result2);
+          textView.setText(result); // 更改顯示文字
         }
       });
     }
