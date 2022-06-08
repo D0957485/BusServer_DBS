@@ -33,31 +33,12 @@ public class MainActivity extends AppCompatActivity {
   String result;
   TextView textView;
 
-//  Context context = this;
-//  EditText et1, et2, et3, et4;
-//  WebView webView;
-//  String url = "http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=bussystem&table=drive";
-//  CookieManager cookieManager;
-//  String cookieStr, idText;
-//  ListView listView1;
-
   //0603
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
-//    StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectDiskReads().detectDiskWrites().detectNetwork().penaltyLog().build());
-//    StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedClosableObjects().detectLeakedSqlLiteObjects().penaltyDeath().penaltyLog().build());
-//
-//    Wcookie(context);
-//    Handler myHandler = new Handler();
-//    myHandler.postDelayed(runTimerStop, 15000);
-//    if (cookieStr != null) {
-//      myHandler.removeCallbacks(runTimerStop);
-//    }
-
 
     Button button = (Button) findViewById(R.id.buttonTosearch);
     textView = (TextView) findViewById(R.id.testTextView);
@@ -70,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         Thread thread = new Thread(mutiThread);
         thread.start();
+
       }
 
     });
@@ -106,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
     {
 
       try {
+
         URL url = new URL("http://10.0.2.2/GetData.php");
 //        URL url = new URL("http://192.168.0.2/GetData.php");
         // 開始宣告 HTTP 連線需要的物件，這邊通常都是一綑的
@@ -136,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
             // 每當讀取出一列，就加到存放字串後面
           }
           inputStream.close(); // 關閉輸入串流
+
           result = box; // 把存放用字串放到全域變數
         }
         // 讀取輸入串流並存到字串的部分
@@ -154,55 +138,6 @@ public class MainActivity extends AppCompatActivity {
       });
     }
   };
-
-
-
-//  private void Wcookie(Context context) {
-//
-//    CookieSyncManager.createInstance(context);
-//    cookieManager = CookieManager.getInstance();
-//    webView = new WebView(context);
-//    webView.getSettings().setJavaScriptEnabled(true);
-//    webView.setWebViewClient(new WebViewClient() {
-//
-//      @Override
-//      public void onPageFinished(WebView view, String url) {
-//
-//        super.onPageFinished(view, url);
-//        cookieManager.setAcceptCookie(true);
-//        cookieStr = cookieManager.getCookie(url);
-//
-//      }
-//
-//    });
-//
-//    webView.loadUrl(url);
-//    webView.clearHistory();
-//    webView.clearCache(true);
-//
-//    cookieManager.removeAllCookie();
-//    cookieManager.removeSessionCookie();
-//
-//  } //end Wcookie
-//
-//  private Runnable runTimerStop = new Runnable() {
-//    @Override
-//    public void run() {
-//
-//      select(null);
-//
-//    }
-//  };
-//
-//  public void select(String id) {
-//
-//    try {
-//
-//    } catch (Exception e) {
-//      Log.e("log_tag=", e.toString());
-//    }
-//
-//  } //end select
 
 } //end class
 
