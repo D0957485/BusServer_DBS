@@ -35,7 +35,7 @@ public class Company extends AppCompatActivity {
 
         });
 
-        Button button3 = (Button) findViewById(R.id.pre);
+        Button button3 = (Button) findViewById(R.id.precomany);
         button3.setOnClickListener(new View.OnClickListener() {
 
             @Override

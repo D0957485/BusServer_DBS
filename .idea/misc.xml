@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver.xml" value="0.24947916666666667" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_driver_log_in.xml" value="0.24947916666666667" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_bus_search.xml" value="0.1859375" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_car_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_company.xml" value="0.24947916666666667" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_company_login.xml" value="0.24947916666666667" />
+        <entry key="..\:/BusServer/app/src/main/res/layout/activity_list_of_driver.xml" value="0.24947916666666667" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/BusServer/app/src/main/res/layout/activity_start_car.xml" value="0.20989583333333334" />
         <entry key="..\:/BusServer/app/src/main/res/layout/content_main.xml" value="0.1" />

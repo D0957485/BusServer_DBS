@@ -7,7 +7,7 @@
   android:layout_gravity="center">
 
   <Button
-    android:id="@+id/pre"
+    android:id="@+id/predlogin"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/previous"
@@ -70,7 +70,7 @@
     app:layout_constraintVertical_bias="0.071" />
 
   <Button
-    android:id="@+id/button2"
+    android:id="@+id/buttonlogdriver"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="48dp"

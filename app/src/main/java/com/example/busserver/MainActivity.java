@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onClick (View view) {
 
-        Intent intent = new Intent(MainActivity.this, BusSearch.class);
-        startActivity(intent);
+        Intent intentA = new Intent(MainActivity.this, BusSearch.class);
+        startActivity(intentA);
         Thread thread = new Thread(mutiThread);
         thread.start();
 
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onClick (View view) {
 
-        Intent intent = new Intent(MainActivity.this, BusDriverLogIn.class);
-        startActivity(intent);
+        Intent intentB = new Intent(MainActivity.this, BusDriverLogIn.class);
+        startActivity(intentB);
 
       }
 
@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onClick (View view) {
-        Intent intent = new Intent(MainActivity.this, CompanyLogin.class);
-        startActivity(intent);
+        Intent intentC = new Intent(MainActivity.this, CompanyLogin.class);
+        startActivity(intentC);
       }
 
     });

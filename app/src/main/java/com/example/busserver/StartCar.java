@@ -20,5 +20,13 @@ public class StartCar extends AppCompatActivity {
       }
     });
 
+    Button buttonC = findViewById(R.id.startcar);
+    buttonC.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        finish();
+      }
+    });
+
   }
 }
